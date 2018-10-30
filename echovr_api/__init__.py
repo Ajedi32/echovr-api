@@ -1,16 +1,14 @@
-import requests
-import json
+import api
+from requests.exceptions import ConnectionError
+from json.decoder import JSONDecodeError
 
 if __name__ == "__main__":
+    api = api.API()
     try:
-        response = requests.get('http://127.0.0.1/session')
-    except requests.exceptions.ConnectionError as e:
+        response_object = api.fetch_state_data()
+    except ConnectionError as e:
         print({'error': "Connection refused. Make sure you're running Echo VR with the -http option and that you're in a match."})
-
-    response_text = response.text.rstrip('\0')
-
-    try:
-        response_object = json.loads(response_text)
-        print(response_object)
-    except json.decoder.JSONDecodeError as e:
+    except JSONDecodeError as e:
         print({'error': "Could not decode response. (Not valid JSON.)"})
+
+    print(response_object)
