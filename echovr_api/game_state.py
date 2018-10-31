@@ -1,4 +1,5 @@
 from typing import List
+from team import Team
 
 """Thrown when the state data passed to GameState is invalid"""
 class InvalidGameStateError(Exception):
@@ -36,4 +37,4 @@ class GameState():
         self.game_status = game_status
         self.possession = possession
 
-        self.teams = teams
+        self.teams = [Team(**data) for data in teams]
