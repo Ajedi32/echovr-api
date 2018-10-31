@@ -1,5 +1,6 @@
 from typing import List
 from stats import Stats
+from geometry import Vector3D
 
 """Represents the state of a single player in the current game"""
 class Player():
@@ -29,5 +30,5 @@ class Player():
         self.userid = userid
         self.possession = possession
 
-        self.position = position
+        self.position = Vector3D(*position)
         self.stats = Stats(**stats)
