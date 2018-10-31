@@ -1,4 +1,5 @@
 from typing import List
+from stats import Stats
 
 """Represents the state of a single team in the current game"""
 class Team():
@@ -25,7 +26,7 @@ class Team():
         self.possession = possession
 
         self.players = players
-        self.stats = stats
+        self.stats = Stats(**stats)
 
     """Better-named alias for team."""
     @property
