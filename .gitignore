@@ -1,1 +1,3 @@
 dist/
+build/
+echovr_api.egg-info
