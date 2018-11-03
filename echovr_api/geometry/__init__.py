@@ -1,1 +1,1 @@
-from geometry.vector3d import Vector3D
+from echovr_api.geometry.vector3d import *

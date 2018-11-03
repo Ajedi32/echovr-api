@@ -1,5 +1,5 @@
 from typing import List
-from team import Team
+from echovr_api.team import Team
 
 """Thrown when the state data passed to GameState is invalid"""
 class InvalidGameStateError(Exception):

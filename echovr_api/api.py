@@ -1,6 +1,6 @@
 import requests
 import json
-from game_state import GameState
+from echovr_api.game_state import GameState
 
 class API(object):
     """Instantiate an API interface for the given base_url."""

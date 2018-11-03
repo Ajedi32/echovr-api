@@ -1,6 +1,6 @@
 from typing import List
-from stats import Stats
-from player import Player
+from echovr_api.stats import Stats
+from echovr_api.player import Player
 
 """Represents the state of a single team in the current game"""
 class Team():

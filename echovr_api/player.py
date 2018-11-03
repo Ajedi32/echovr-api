@@ -1,6 +1,6 @@
 from typing import List
-from stats import Stats
-from geometry import Vector3D
+from echovr_api.stats import Stats
+from echovr_api.geometry import Vector3D
 
 """Represents the state of a single player in the current game"""
 class Player():
