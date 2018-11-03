@@ -47,3 +47,12 @@ class API(object):
     """
     def fetch_state(self):
         return GameState(**self.fetch_state_data())
+
+"""An instance of API, with the default base URL."""
+DEFAULT_API = API()
+
+"""Shortcut for calling fetch_state_data on DEFAULT_API"""
+fetch_state_data = DEFAULT_API.fetch_state_data
+
+"""Shortcut for calling fetch_state on DEFAULT_API"""
+fetch_state = DEFAULT_API.fetch_state

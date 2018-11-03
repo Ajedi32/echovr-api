@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - A changelog
+- Shortcut methods for accessing the default API on localhost
 
 ### Changed
 - Fix imports to work when `__init__.py` is not executed directly

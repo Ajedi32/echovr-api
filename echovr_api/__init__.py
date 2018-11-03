@@ -1,1 +1,1 @@
-from echovr_api.api import API
+from echovr_api.api import *
