@@ -1,3 +1,7 @@
+# Build output
 dist/
 build/
 echovr_api.egg-info
+
+# Virtualenv
+.venv/
