@@ -17,5 +17,5 @@ pipenv install
 For now:
 
 ```
-pipenv run python ./echovr_api/__init__.py
+pipenv run python ./test.py
 ```
