@@ -2,20 +2,58 @@
 
 Python bindings for Echo VR's HTTP API.
 
-## Getting started with development
+## Installation
 
 If you haven't already, [install Python 3](https://www.python.org/downloads/) and [Pipenv](https://pipenv.readthedocs.io/en/latest/install/).
 
-Now, to install all Python package dependencies, run:
+Now, in your project directory, run:
+
+```
+pipenv install echovr_api
+```
+
+## Usage Example
+
+```
+from requests.exceptions import ConnectionError
+import json
+import echovr_api
+
+try:
+    game_state = echovr_api.fetch_state()
+
+    print(f"Game status: {game_state.game_status}")
+    print(f"Seconds on clock: {game_state.game_clock}")
+
+    if (game_state.blue_team.score > game_state.orange_team.score):
+        print("Blue team is winning!")
+    elif (game_state.orange_team.score > game_state.blue_team.score):
+        print("Orange team is winning!")
+    else:
+        print("It's tied!")
+
+    print(f"Score: {game_state.blue_team.score} - {game_state.orange_team.score}")
+
+except ConnectionError as e:
+    print("Connection refused. Make sure you're running Echo VR with the -http option and that you're in a match.")
+except json.decoder.JSONDecodeError as e:
+    print("Could not decode response. (Not valid JSON.)")
+```
+
+For full documentation of the available methods and classes, feel free to browse the docstrings in the source code.
+
+## Contributing
+
+To get everything you need to start making changes to this package, first [install Python 3](https://www.python.org/downloads/) and [Pipenv](https://pipenv.readthedocs.io/en/latest/install/), clone this repository, then run:
 
 ```
 pipenv install
 ```
 
-## Usage
+### Try it
 
-For now:
+To play around with the API, open an instance of Echo VR with the -http flag, then run:
 
 ```
-pipenv run python ./test.py
+pipenv run python -i ./test.py
 ```
