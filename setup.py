@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="echovr_api",
-    version="0.0.1",
+    version="0.1.0",
     author="Ajedi32",
     author_email="ajedi32.web@gmail.com",
     description="Python bindings for Echo VR's HTTP API.",
