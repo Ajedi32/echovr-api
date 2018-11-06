@@ -1,5 +1,6 @@
 from typing import List
 from echovr_api.team import Team
+import logging
 
 """Thrown when the state data passed to GameState is invalid"""
 class InvalidGameStateError(Exception):
@@ -27,6 +28,12 @@ class GameState():
     - `teams`
         An array of dicts containing data used to instantiate the game's two
         teams.
+
+    Raises:
+
+    - `InvalidGameStateError`
+        When you attempt to initialize the game into a state that doesn't make
+        sense (such as having three teams).
     """
     def __init__(self, sessionid: str = None, game_clock_display: str = None,
                        game_clock: float = None, game_status: str = 'unknown',
@@ -37,4 +44,20 @@ class GameState():
         self.game_status = game_status
         self.possession = possession
 
+        if len(teams) != 2:
+            raise InvalidGameStateError(f"Unexpected number of teams: {len(teams)}")
+
         self.teams = [Team(**data) for data in teams]
+
+        # Position in the array seems stable. Going by team name is unreliable,
+        # since players can set a custom team name for themselves by pressing
+        # F11.
+        self.blue_team = self.teams[0]
+        self.blue_team.color = Team.Color.BLUE
+        self.orange_team = self.teams[1]
+        self.orange_team.color = Team.Color.ORANGE
+
+        # Just in case I'm wrong (or a team decides to be a smart aleck), log
+        # it...
+        if self.blue_team == 'ORANGE TEAM' or self.orange_team == 'BLUE TEAM':
+            logging.warn("Blue/Orange teams might be backwards (judging by their names).")
