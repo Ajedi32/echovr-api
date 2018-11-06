@@ -43,3 +43,15 @@ class Team():
     @property
     def name(self):
         return self.team
+
+    """
+    The current score of the team.
+
+    Note: There's currently a bug in the API which makes this inaccurate if the
+    team has scored self-goals, but it's the best we have for now. If the API
+    ever exposes more accurate data, this method will be updated to take
+    advantage of that.
+    """
+    @property
+    def score(self):
+        return self.stats.points

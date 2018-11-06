@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - A changelog
 - Shortcut methods for accessing the default API on localhost
 - Concept of team colors, with special methods on the GameState and Team objects
+- `Team#score` shortcut method for getting a team's score
 
 ### Changed
 - Fix imports to work when `__init__.py` is not executed directly
