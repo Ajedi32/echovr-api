@@ -8,6 +8,7 @@ def _output_json(data):
 if __name__ == "__main__":
     try:
         response_object = echovr_api.fetch_state_data()
+        game_state = echovr_api.fetch_state()
     except ConnectionError as e:
         _output_json({'error': "Connection refused. Make sure you're running Echo VR with the -http option and that you're in a match."})
     except json.decoder.JSONDecodeError as e:
