@@ -11,7 +11,7 @@ setuptools.setup(
     description="Python bindings for Echo VR's HTTP API.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/Ajedi32/echovr-api/",
     packages=setuptools.find_packages(),
     install_requires=[
         "requests"
