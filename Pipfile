@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-requests = "*"
+echovr-api = {editable = true, path = "."}
 
 [dev-packages]
 setuptools = "*"

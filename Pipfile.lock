@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "05012eaba0b82a79b40a4111de83c39da115e75bf17d9537792234b293fe103f"
+            "sha256": "a09dab9ec4770525f595e030e358abda5bda51bc87185d1047da104639b45b5d"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -30,6 +30,10 @@
             ],
             "version": "==3.0.4"
         },
+        "echovr-api": {
+            "editable": true,
+            "path": "."
+        },
         "idna": {
             "hashes": [
                 "sha256:156a6814fb5ac1fc6850fb002e0852d56c0c8d2531923a51032d1b70760e186e",
@@ -42,7 +46,6 @@
                 "sha256:99dcfdaaeb17caf6e526f32b6a7b780461512ab3f1d992187801694cba42770c",
                 "sha256:a84b8c9ab6239b578f22d1c21d51b696dcfe004032bb80ea832398d6909d7279"
             ],
-            "index": "pypi",
             "version": "==2.20.0"
         },
         "urllib3": {
