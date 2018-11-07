@@ -57,3 +57,22 @@ To play around with the API, open an instance of Echo VR with the -http flag, th
 ```
 pipenv run python -i ./test.py
 ```
+
+### Release process
+
+First, update `CHANGELOG.md` and the version number in `setup.py`. Commit, tag,
+and push these changes.
+
+Next, build the package:
+
+```
+pipenv install --dev
+pipenv run python setup.py sdist bdist_wheel
+```
+
+Finally, upload the built packages to PyPi. You can do this using `twine`
+(`pip install twine`):
+
+```
+twine upload dist/*
+```
