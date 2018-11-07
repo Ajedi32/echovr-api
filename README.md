@@ -9,7 +9,7 @@ If you haven't already, [install Python 3](https://www.python.org/downloads/) an
 Now, in your project directory, run:
 
 ```
-pipenv install echovr_api
+pipenv install echovr-api
 ```
 
 ## Usage Example
