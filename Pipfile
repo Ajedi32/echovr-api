@@ -9,6 +9,7 @@ echovr-api = {editable = true, path = "."}
 [dev-packages]
 setuptools = "*"
 wheel = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.7"

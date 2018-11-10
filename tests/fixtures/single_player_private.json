@@ -1,0 +1,61 @@
+{
+   "sessionid": "A49FF0B1-2ECE-4B62-9369-60DF85659C91",
+   "game_clock_display": "01:26.66",
+   "game_clock": 86.661247,
+   "game_status": "playing",
+   "possession": [
+      -1,
+      -1
+   ],
+   "teams": [
+      {
+         "players": [
+            {
+               "name": "mateuszdrwal",
+               "playerid": 0,
+               "position": [
+                  -3.5480001,
+                  -0.41500002,
+                  -62.928001
+               ],
+               "stats": {
+                  "possession_time": 67.133835,
+                  "points": 2,
+                  "saves": 0,
+                  "goals": 0,
+                  "stuns": 0,
+                  "passes": 0,
+                  "catches": 0,
+                  "steals": 0,
+                  "blocks": 0,
+                  "interceptions": 0,
+                  "assists": 0,
+                  "shots_taken": 2
+               },
+               "userid": 1586878668050213,
+               "possession": false
+            }
+         ],
+         "team": "BLUE TEAM",
+         "possession": false,
+         "stats": {
+            "possession_time": 67.133835,
+            "points": 2,
+            "goals": 0,
+            "saves": 0,
+            "stuns": 0,
+            "interceptions": 0,
+            "blocks": 0,
+            "passes": 0,
+            "catches": 0,
+            "steals": 0,
+            "assists": 0,
+            "shots_taken": 2
+         }
+      },
+      {
+         "team": "ORANGE TEAM",
+         "possession": false
+      }
+   ]
+}
