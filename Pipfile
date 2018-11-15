@@ -12,6 +12,7 @@ wheel = "*"
 sphinx = "*"
 sphinxcontrib-apidoc = "*"
 sphinx-autodoc-typehints = "*"
+"m2r" = "*"
 
 [requires]
 python_version = "3.7"
