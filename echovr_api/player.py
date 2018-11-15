@@ -2,24 +2,20 @@ from typing import List
 from echovr_api.stats import Stats
 from echovr_api.geometry import Vector3D
 
-"""Represents the state of a single player in the current game"""
 class Player():
-    """
-    Initialize the player with data from the API.
+    """Represents the state of a single player in the current game
 
-    Parameters:
-
-    - `name`
+    :param name:
         The username of the player.
-    - `playerid`
+    :param playerid:
         A number representing ID of the player within the current game session.
-    - `userid`
+    :param userid:
         A unique number identifying the player across all game sessions.
-    - `possession`
+    :param possession:
         Indicates whether this player currently has posession of the disk.
-    - `position`
+    :param position:
         The current position of the player within the arena
-    - `stats`
+    :param stats:
         A dict containing data used to instantiate the player's current stats.
     """
     def __init__(self, name: str = "", playerid: int = None, userid: int = None,
