@@ -1,37 +1,33 @@
-"""Statistics about a player or team within the current game"""
 class Stats():
-    """
-    Initialize statistics with data from the API.
+    """Statistics about a player or team within the current game
 
-    Parameters:
-
-    - `possession_time`
+    :param possession_time:
         Time in seconds that the subject posessed the disk.
-    - `points`
+    :param points:
         Points scored by the subject.
-    - `assists`
+    :param assists:
         Number of goals assisted by the subject.
-    - `saves`
+    :param saves:
         Number of opposing team goals prevented by the subject.
-    - `stuns`
+    :param stuns:
         Number of times the subject has stunned the opposing team.
-    - `goals`
+    :param goals:
         Number of goals scored by the subject.
         TODO: API always returns zero for teams?
-    - `passes`
+    :param passes:
         Number of times the subject successfully completed a pass
         TODO: API always returns zero for teams?
-    - `catches`
+    :param catches:
         Number of times the subject succssfully caught a pass by a team member
-    - `steals`
+    :param steals:
         Number of times the subject stole the disk from the opposing team
-    - `blocks`
+    :param blocks:
         Number of times the subject blocked a punch
         TODO: API always returns zero for teams?
-    - `interceptions`
+    :param interceptions:
         Number of times the subject intercepted a pass by the opposing team
         TODO: API always returns zero for teams?
-    - `shots_taken`
+    :param shots_taken:
         Number of times the subject attempted a shot on goal
     """
     def __init__(self, possession_time: float = 0.0, points: int = 0,
