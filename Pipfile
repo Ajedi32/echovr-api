@@ -11,6 +11,7 @@ setuptools = "*"
 wheel = "*"
 sphinx = "*"
 sphinxcontrib-apidoc = "*"
+sphinx-autodoc-typehints = "*"
 
 [requires]
 python_version = "3.7"
