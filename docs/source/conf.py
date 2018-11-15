@@ -41,6 +41,7 @@ release = '0.1.1'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode',
+    'sphinxcontrib.apidoc',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -176,3 +177,7 @@ epub_exclude_files = ['search.html']
 
 
 # -- Extension configuration -------------------------------------------------
+apidoc_module_dir = '../../echovr_api'
+apidoc_output_dir = 'reference'
+apidoc_excluded_paths = []
+apidoc_separate_modules = True

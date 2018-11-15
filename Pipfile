@@ -10,6 +10,7 @@ echovr-api = {editable = true, path = "."}
 setuptools = "*"
 wheel = "*"
 sphinx = "*"
+sphinxcontrib-apidoc = "*"
 
 [requires]
 python_version = "3.7"
