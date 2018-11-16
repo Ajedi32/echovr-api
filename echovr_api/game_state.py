@@ -39,7 +39,7 @@ class GameState():
         self.possession = possession
 
         if len(teams) != 2:
-            raise InvalidGameStateError(f"Unexpected number of teams: {len(teams)}")
+            raise InvalidGameStateError("Unexpected number of teams: %s" % len(teams))
 
         self.teams = [Team(**data) for data in teams]
 
