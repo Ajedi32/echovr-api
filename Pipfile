@@ -7,12 +7,9 @@ name = "pypi"
 echovr-api = {editable = true, path = "."}
 
 [dev-packages]
+echovr-api = {editable = true, extras = ["docs"], path = "."}
 setuptools = "*"
 wheel = "*"
-sphinx = "*"
-sphinxcontrib-apidoc = "*"
-sphinx-autodoc-typehints = "*"
-"m2r" = "*"
 
 [requires]
 python_version = "3.7"

@@ -16,6 +16,14 @@ setuptools.setup(
     install_requires=[
         "requests"
     ],
+    extras_require={
+        'docs': [
+            'sphinx >=1.8.2, <2.0.0a0',
+            'sphinx-autodoc-typehints >=1.5.0, <2.0.0a0',
+            'sphinxcontrib-apidoc >=0.3.0, <0.4.0a0',
+            'm2r >=0.2.1, <0.3.0a0',
+        ]
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
