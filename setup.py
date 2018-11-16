@@ -22,6 +22,7 @@ setuptools.setup(
             'sphinx-autodoc-typehints >=1.5.0, <2.0.0a0',
             'sphinxcontrib-apidoc >=0.3.0, <0.4.0a0',
             'm2r >=0.2.1, <0.3.0a0',
+            'sphinx_rtd_theme >=0.4.2, <0.5.0a0',
         ]
     },
     classifiers=[
