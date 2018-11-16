@@ -60,8 +60,7 @@ pipenv run python -i ./test.py
 
 ### Release process
 
-First, update `CHANGELOG.md` and the version number in `setup.py`. Commit, tag,
-and push these changes.
+First, update `CHANGELOG.md` and the version number in `setup.py` and `docs/source/conf.py`. Then commit, tag, and push these changes.
 
 Next, build the package:
 
