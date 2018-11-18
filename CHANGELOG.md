@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - [API Documentation on Read the Docs](https://echovr-api.readthedocs.io/en/latest/index.html)
+- Support for new API response properties in Echo VR Combat release patch
 
 ## [0.1.1] - 2018-11-06
 ### Fixed
