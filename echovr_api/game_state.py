@@ -1,5 +1,6 @@
 from typing import List
 from echovr_api.team import Team
+from echovr_api.disk import Disk
 import logging
 
 class InvalidGameStateError(Exception):
@@ -100,8 +101,8 @@ class GameState():
         #: The current score of the orange team.
         self.orange_points = orange_points
 
-        #: A dict representing the current state of the disk.
-        self.disc = disc
+        #: A :class:`~.Disk` object representing the current state of the disk.
+        self.disc = Disk(**disc)
 
         #: A dict containing facts and statistics related to the last goal
         #: scored.
