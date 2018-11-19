@@ -134,3 +134,32 @@ class GameState():
         # it...
         if self.blue_team == 'ORANGE TEAM' or self.orange_team == 'BLUE TEAM':
             logging.warn("Blue/Orange teams might be backwards (judging by their names).")
+
+    def find_player(self, username: str = None):
+        """Find the :class:`~.Player` with the given properties
+
+        Returns the player whose attributes match the given properties, or
+        ``None`` if no match is found.
+
+        :param username: The username of the Player
+        """
+        if username != None:
+            return next((player for player in self.players if player.name == username), None)
+        else:
+            return None
+
+    def find_team(self, color: str = None):
+        """Find the :class:`~.Team` with the given properties
+
+        Returns the team whose attributes match the given properties, or
+        ``None`` if no match is found.
+
+        :param color: The :class:`~.Team.Color` of the Team
+        """
+        if color != None:
+            if color is Team.Color.BLUE:
+                return self.blue_team
+            else:
+                return self.orange_team
+        else:
+            return None
