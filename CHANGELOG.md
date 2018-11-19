@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [API Documentation on Read the Docs](https://echovr-api.readthedocs.io/en/latest/index.html)
 - `players` property on `GameSate` for listing all players in the game
 - `find_team` and `find_player` methods on `GameState`
+- Alias `Player#name` as `Player#username`
 
 ## [0.1.1] - 2018-11-06
 ### Fixed

@@ -117,3 +117,8 @@ class Player():
 
         #: The :class:`~.Stats` object for this player
         self.stats = Stats(**stats)
+
+    @property
+    def username(self):
+        """The username of the player."""
+        return self.name
