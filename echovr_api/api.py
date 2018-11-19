@@ -34,8 +34,8 @@ class API(object):
     def fetch_state(self):
         """
         :returns:
-            A `GameState` object representing the state of the current game
-            session as presented by the API.
+            A :class:`~.GameState` object representing the state of the current
+            game session as presented by the API.
 
         :raises requests.exceptions.ConnectionError:
             This exception will be thrown if the API is unavaible. This might

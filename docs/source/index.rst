@@ -1,15 +1,15 @@
-.. Echo VR API documentation master file, created by
-   sphinx-quickstart on Sat Nov 10 20:43:06 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Echo VR API
+===========
 
-Welcome to Echo VR API's documentation!
-=======================================
+Python bindings for Echo VR's HTTP API.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   api_reference
+   readme
+   changelog
 
 
 Indices and tables
@@ -18,5 +18,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
-.. mdinclude:: ../../README.md

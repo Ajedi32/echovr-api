@@ -12,7 +12,9 @@ Now, in your project directory, run:
 pipenv install echovr-api
 ```
 
-## Usage Example
+## Usage
+
+Basic usage example:
 
 ```
 from requests.exceptions import ConnectionError
@@ -40,7 +42,7 @@ except json.decoder.JSONDecodeError as e:
     print("Could not decode response. (Not valid JSON.)")
 ```
 
-For full documentation of the available methods and classes, feel free to browse the docstrings in the source code.
+For comprehensive documentation of the available methods and classes, please see the [full API Documentation on Read The Docs](https://echovr-api.readthedocs.io/en/latest/).
 
 ## Contributing
 
