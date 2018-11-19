@@ -1,3 +1,4 @@
+import echovr_api.game_state
 from echovr_api.team import Team
 
 class LastScore():
@@ -44,3 +45,41 @@ class LastScore():
 
         #: The username of the player who assisted the goal, if any
         self.assist_scored_username = assist_scored
+
+class ContextualizedLastScore(LastScore):
+    """Statistics about a goal, in the context of a :class:`~.GameState`
+
+    The same as the :class:`LastScore` class, but with additional convenience methods
+    and properties enabled by the context provided by a :class:`~.GameState`
+    object.
+
+    :param game_state:
+        An object representing the current state of the game
+    :param superclass_attributes:
+        Passed to the init method of :class:`LastScore`
+    """
+
+    def __init__(self, game_state: 'echovr_api.game_state.GameState',
+                       **superclass_attributes):
+        super().__init__(**superclass_attributes)
+
+        #: An object representing the current state of the game
+        self.game_state = game_state
+
+    @property
+    def team(self):
+        """The :class:`~.Team` that scored the goal"""
+        return self.game_state.find_team(color=self.team_color)
+
+    @property
+    def person_scored(self):
+        """The :class:`~.Player` that scored the goal"""
+        return self.game_state.find_player(username=self.person_scored_username)
+    player_scored = person_scored
+    scored_by = person_scored
+
+    @property
+    def assist_scored(self):
+        """The :class:`~.Player` that assisted the goal, if any"""
+        return self.game_state.find_player(username=self.assist_scored_username)
+    assisted_by = assist_scored

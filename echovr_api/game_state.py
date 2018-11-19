@@ -1,7 +1,7 @@
 from typing import List
 from echovr_api.team import Team
 from echovr_api.disk import Disk
-from echovr_api.last_score import LastScore
+from echovr_api.last_score import ContextualizedLastScore
 import logging
 
 class InvalidGameStateError(Exception):
@@ -105,9 +105,9 @@ class GameState():
         #: A :class:`~.Disk` object representing the current state of the disk.
         self.disc = Disk(**disc)
 
-        #: A :class:`~.LastScore` object containing facts and statistics related
-        #: to the last goal scored.
-        self.last_score = LastScore(**last_score)
+        #: A :class:`~.ContextualizedLastScore` object containing facts and
+        #: statistics related to the last goal scored.
+        self.last_score = ContextualizedLastScore(self, **last_score)
 
         if len(teams) != 2:
             raise InvalidGameStateError("Unexpected number of teams: %s" % len(teams))
