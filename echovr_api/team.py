@@ -50,4 +50,7 @@ class Team():
         the API ever exposes more accurate data, this method will be updated to
         take advantage of that.
         """
+        # Note: game_status.(blue|orange)_score are currently bugged to always
+        # return 0. Once that bug is fixed, this should be updated to use those
+        # values instead.
         return self.stats.points
