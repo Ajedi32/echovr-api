@@ -26,6 +26,14 @@ class Team():
         BLUE = 0
         ORANGE = 1
 
+        @classmethod
+        def by_name(cls, name):
+            """Return the `Color` that matches a given color name"""
+            try:
+                return cls[name.upper()]
+            except ValueError:
+                return None
+
     def __init__(self, team: str = "", possession: bool = False,
                        players: List[dict] = [], stats: dict = {},
                        color: Color = None):
