@@ -115,6 +115,9 @@ class GameState():
         #: An array of both :class:`~.Team`\ s currently in the game
         self.teams = [Team(**data) for data in teams]
 
+        #: An array of all :class:`~.Player`\ s currently in the game
+        self.players = [player for team in self.teams for player in team.players]
+
         # Note: The positions of the blue and orange teams in the array seem to
         # be fixed. Judging color by team name is unreliable, since players can
         # set a custom team name for themselves by pressing F11.
