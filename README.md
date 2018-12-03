@@ -49,7 +49,15 @@ For comprehensive documentation of the available methods and classes, please see
 To get everything you need to start making changes to this package, first [install Python 3](https://www.python.org/downloads/) and [Pipenv](https://pipenv.readthedocs.io/en/latest/install/), clone this repository, then run:
 
 ```
-pipenv install
+pipenv install --dev
+```
+
+### Run the tests
+
+To run all automated tests, run:
+
+```
+pipevn run pytest tests/
 ```
 
 ### Try it
