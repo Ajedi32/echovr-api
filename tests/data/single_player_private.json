@@ -1,0 +1,125 @@
+{
+  "disc": {
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "velocity": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bounce_count": 0
+  },
+  "sessionid": "8DFCB732-BF34-497E-B3D2-95D6F659F036",
+  "orange_points": 0,
+  "private_match": true,
+  "client_name": "Ajedi32",
+  "game_clock_display": "05:00.00",
+  "game_status": "pre_match",
+  "game_clock": 300.0,
+  "match_type": "INVALID GAMETYPE",
+  "teams": [
+    {
+      "players": [
+        {
+          "name": "Ajedi32",
+          "rhand": [
+            0.40500003,
+            3.4660001,
+            -27.412001
+          ],
+          "playerid": 0,
+          "position": [
+            0.19700001,
+            3.5340002,
+            -27.876001
+          ],
+          "lhand": [
+            0.37900001,
+            3.4750001,
+            -27.446001
+          ],
+          "userid": 1412867812132181,
+          "stats": {
+            "possession_time": 0.0,
+            "points": 0,
+            "saves": 0,
+            "goals": 0,
+            "stuns": 0,
+            "passes": 0,
+            "catches": 0,
+            "steals": 0,
+            "blocks": 0,
+            "interceptions": 0,
+            "assists": 0,
+            "shots_taken": 0
+          },
+          "number": 32,
+          "level": 50,
+          "possession": false,
+          "left": [
+            0.43300003,
+            -0.0060000001,
+            0.90100002
+          ],
+          "invulnerable": false,
+          "up": [
+            0.013,
+            1.0,
+            0.0
+          ],
+          "forward": [
+            -0.90100002,
+            0.012,
+            0.43300003
+          ],
+          "stunned": false,
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "blocking": false
+        }
+      ],
+      "team": "BLUE TEAM",
+      "possession": false,
+      "stats": {
+        "possession_time": 0.0,
+        "points": 0,
+        "goals": 0,
+        "saves": 0,
+        "stuns": 0,
+        "interceptions": 0,
+        "blocks": 0,
+        "passes": 0,
+        "catches": 0,
+        "steals": 0,
+        "assists": 0,
+        "shots_taken": 0
+      }
+    },
+    {
+      "team": "ORANGE TEAM",
+      "possession": false
+    }
+  ],
+  "map_name": "INVALID LEVEL",
+  "possession": [
+    -1,
+    -1
+  ],
+  "tournament_match": false,
+  "blue_points": 0,
+  "last_score": {
+    "disc_speed": 0.0,
+    "team": "blue",
+    "goal_type": "[NO GOAL]",
+    "point_amount": 0,
+    "distance_thrown": 0.0,
+    "person_scored": "[INVALID]",
+    "assist_scored": "[INVALID]"
+  }
+}

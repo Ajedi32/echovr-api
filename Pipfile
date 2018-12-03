@@ -10,6 +10,7 @@ echovr-api = {editable = true, path = "."}
 echovr-api = {editable = true, extras = ["docs"], path = "."}
 setuptools = "*"
 wheel = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.7"

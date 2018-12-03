@@ -1,0 +1,441 @@
+{
+  "disc": {
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "velocity": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "bounce_count": 0
+  },
+  "sessionid": "0C087AF1-C947-462A-8206-C06D64B1910A",
+  "orange_points": 0,
+  "private_match": false,
+  "client_name": "TestUser",
+  "game_clock_display": "01:04.60",
+  "game_status": "playing",
+  "game_clock": 64.609161,
+  "match_type": "Echo_Arena_Public",
+  "teams": [
+    {
+      "players": [
+        {
+          "name": "Bob",
+          "rhand": [
+            -10.416,
+            3.5430002,
+            26.869001
+          ],
+          "playerid": 0,
+          "position": [
+            -10.598001,
+            3.9720001,
+            26.736002
+          ],
+          "lhand": [
+            -10.419001,
+            3.5290003,
+            26.732
+          ],
+          "userid": 4814054792376258,
+          "stats": {
+            "possession_time": 12.294746,
+            "points": 3,
+            "saves": 0,
+            "goals": 0,
+            "stuns": 6,
+            "passes": 0,
+            "catches": 0,
+            "steals": 0,
+            "blocks": 0,
+            "interceptions": 0,
+            "assists": 0,
+            "shots_taken": 1
+          },
+          "number": 76,
+          "level": 8,
+          "possession": false,
+          "left": [
+            -0.80800003,
+            -0.017000001,
+            -0.58900005
+          ],
+          "invulnerable": false,
+          "up": [
+            0.14500001,
+            0.96300006,
+            -0.22600001
+          ],
+          "forward": [
+            0.57100004,
+            -0.26800001,
+            -0.77600002
+          ],
+          "stunned": false,
+          "velocity": [
+            -2.131,
+            -0.63000005,
+            0.33400002
+          ],
+          "blocking": false
+        },
+        {
+          "name": "Jack",
+          "rhand": [
+            -6.1950002,
+            -1.6010001,
+            9.3270006
+          ],
+          "playerid": 3,
+          "position": [
+            -5.6170001,
+            -1.376,
+            9.3290005
+          ],
+          "lhand": [
+            -5.7990003,
+            -1.6680001,
+            9.5100002
+          ],
+          "userid": 4814054792376258,
+          "stats": {
+            "possession_time": 39.915119,
+            "points": 3,
+            "saves": 0,
+            "goals": 0,
+            "stuns": 5,
+            "passes": 0,
+            "catches": 0,
+            "steals": 0,
+            "blocks": 0,
+            "interceptions": 0,
+            "assists": 0,
+            "shots_taken": 2
+          },
+          "number": 33,
+          "level": 13,
+          "possession": false,
+          "left": [
+            0.523,
+            0.16600001,
+            0.83600003
+          ],
+          "invulnerable": false,
+          "up": [
+            -0.087000005,
+            0.98600006,
+            -0.141
+          ],
+          "forward": [
+            -0.84800005,
+            0.001,
+            0.53000003
+          ],
+          "stunned": false,
+          "velocity": [
+            -1.409,
+            -0.79300004,
+            -1.279
+          ],
+          "blocking": false
+        },
+        {
+          "name": "Jill",
+          "rhand": [
+            -2.0270002,
+            0.38000003,
+            24.303001
+          ],
+          "playerid": 4,
+          "position": [
+            -1.9760001,
+            0.72300005,
+            24.656002
+          ],
+          "lhand": [
+            -2.26,
+            0.39900002,
+            24.708002
+          ],
+          "userid": 8437729702632887,
+          "stats": {
+            "possession_time": 25.23666,
+            "points": 0,
+            "saves": 0,
+            "goals": 0,
+            "stuns": 6,
+            "passes": 0,
+            "catches": 0,
+            "steals": 0,
+            "blocks": 0,
+            "interceptions": 0,
+            "assists": 0,
+            "shots_taken": 1
+          },
+          "number": 88,
+          "level": 27,
+          "possession": false,
+          "left": [
+            -0.89300007,
+            0.28800002,
+            0.34500003
+          ],
+          "invulnerable": false,
+          "up": [
+            0.20700002,
+            0.94500005,
+            -0.25400001
+          ],
+          "forward": [
+            -0.39900002,
+            -0.155,
+            -0.90400004
+          ],
+          "stunned": false,
+          "velocity": [
+            -1.7750001,
+            -0.66100001,
+            -4.4420004
+          ],
+          "blocking": false
+        }
+      ],
+      "team": "BLUE TEAM",
+      "possession": false,
+      "stats": {
+        "points": 6,
+        "possession_time": 77.446526,
+        "interceptions": 0,
+        "blocks": 0,
+        "steals": 0,
+        "catches": 0,
+        "passes": 0,
+        "saves": 0,
+        "goals": 0,
+        "stuns": 17,
+        "assists": 0,
+        "shots_taken": 4
+      }
+    },
+    {
+      "players": [
+        {
+          "name": "Matt",
+          "rhand": [
+            -1.0710001,
+            1.238,
+            27.642002
+          ],
+          "playerid": 1,
+          "position": [
+            -1.128,
+            1.567,
+            28.103001
+          ],
+          "lhand": [
+            -1.4410001,
+            1.149,
+            27.785002
+          ],
+          "userid": 7112741646595762,
+          "stats": {
+            "possession_time": 22.496792,
+            "points": 0,
+            "saves": 0,
+            "goals": 0,
+            "stuns": 4,
+            "passes": 0,
+            "catches": 0,
+            "steals": 0,
+            "blocks": 0,
+            "interceptions": 0,
+            "assists": 0,
+            "shots_taken": 1
+          },
+          "number": 21,
+          "level": 8,
+          "possession": true,
+          "left": [
+            -0.94400007,
+            -0.045000002,
+            0.32600001
+          ],
+          "invulnerable": true,
+          "up": [
+            -0.045000002,
+            0.99900007,
+            0.0060000001
+          ],
+          "forward": [
+            -0.32600001,
+            -0.0090000005,
+            -0.94500005
+          ],
+          "stunned": false,
+          "velocity": [
+            -1.2,
+            -0.79000002,
+            -4.7080002
+          ],
+          "blocking": false
+        },
+        {
+          "name": "John",
+          "rhand": [
+            -6.5420003,
+            0.39300001,
+            13.793
+          ],
+          "playerid": 2,
+          "position": [
+            -6.6940002,
+            0.75500005,
+            13.903001
+          ],
+          "lhand": [
+            -6.9910002,
+            0.21800001,
+            13.748001
+          ],
+          "userid": 8471929186990465,
+          "stats": {
+            "possession_time": 51.367683,
+            "points": 2,
+            "saves": 0,
+            "goals": 0,
+            "stuns": 6,
+            "passes": 0,
+            "catches": 0,
+            "steals": 0,
+            "blocks": 0,
+            "interceptions": 0,
+            "assists": 0,
+            "shots_taken": 0
+          },
+          "number": 17,
+          "level": 12,
+          "possession": false,
+          "left": [
+            -0.96900004,
+            -0.15100001,
+            0.19600001
+          ],
+          "invulnerable": false,
+          "up": [
+            -0.21800001,
+            0.89600003,
+            -0.38800001
+          ],
+          "forward": [
+            -0.11700001,
+            -0.41800001,
+            -0.90100002
+          ],
+          "stunned": false,
+          "velocity": [
+            -1.075,
+            -1.2180001,
+            -3.0700002
+          ],
+          "blocking": false
+        },
+        {
+          "name": "Mary",
+          "rhand": [
+            -4.0420003,
+            -3.6960001,
+            24.762001
+          ],
+          "playerid": 5,
+          "position": [
+            -3.8340001,
+            -3.4100001,
+            25.092001
+          ],
+          "lhand": [
+            -4.1560001,
+            -3.7770002,
+            24.766001
+          ],
+          "userid": 6167045639225536,
+          "stats": {
+            "possession_time": 7.233254,
+            "points": 0,
+            "saves": 1,
+            "goals": 0,
+            "stuns": 1,
+            "passes": 0,
+            "catches": 0,
+            "steals": 0,
+            "blocks": 0,
+            "interceptions": 0,
+            "assists": 0,
+            "shots_taken": 0
+          },
+          "number": 1,
+          "level": 2,
+          "possession": false,
+          "left": [
+            -0.91900003,
+            -0.055000003,
+            0.39100003
+          ],
+          "invulnerable": false,
+          "up": [
+            -0.050000001,
+            0.99800003,
+            0.023000002
+          ],
+          "forward": [
+            -0.39200002,
+            0.0020000001,
+            -0.92000002
+          ],
+          "stunned": false,
+          "velocity": [
+            -1.9720001,
+            -0.30900002,
+            -3.3980002
+          ],
+          "blocking": false
+        }
+      ],
+      "team": "ORANGE TEAM",
+      "possession": true,
+      "stats": {
+        "points": 2,
+        "possession_time": 81.097725,
+        "interceptions": 0,
+        "blocks": 0,
+        "steals": 0,
+        "catches": 0,
+        "passes": 0,
+        "saves": 1,
+        "goals": 0,
+        "stuns": 11,
+        "assists": 0,
+        "shots_taken": 1
+      }
+    }
+  ],
+  "map_name": "mpl_arena_a",
+  "possession": [
+    1,
+    0
+  ],
+  "tournament_match": false,
+  "blue_points": 0,
+  "last_score": {
+    "disc_speed": 0.0,
+    "team": "blue",
+    "goal_type": "[NO GOAL]",
+    "point_amount": 0,
+    "distance_thrown": 0.0,
+    "person_scored": "[INVALID]",
+    "assist_scored": "[INVALID]"
+  }
+}
