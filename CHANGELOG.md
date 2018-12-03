@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- `Team.Color.by_name` throwing an error when called with an invalid name (now
+  returns `None` instead)
 
 ## [0.2.0] - 2018-11-18
 ### Added

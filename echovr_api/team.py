@@ -31,7 +31,7 @@ class Team():
             """Return the `Color` that matches a given color name"""
             try:
                 return cls[name.upper()]
-            except ValueError:
+            except KeyError:
                 return None
 
     def __init__(self, team: str = "", possession: bool = False,
