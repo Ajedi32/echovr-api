@@ -68,6 +68,17 @@ To play around with the API, open an instance of Echo VR with the -http flag, th
 pipenv run python -i ./test.py
 ```
 
+### Generate documentation
+
+To generate documentation for the project, run the following in the project root:
+
+```
+pipenv run sphinx-build docs/source/ docs/build/
+```
+
+You can then access the built documentation by opening the generated
+`docs/build/index.html` file in a web browser.
+
 ### Release process
 
 First, update `CHANGELOG.md` and the version number in `setup.py` and `docs/source/conf.py`. Then commit, tag, and push these changes.
