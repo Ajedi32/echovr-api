@@ -2,9 +2,8 @@ environment:
   matrix:
     # Pre-installed Python versions
     # See: https://www.appveyor.com/docs/windows-images-software/#python
-    - PYTHON: C:\Python36
-    - PYTHON: C:\Python36-x64
-    - PYTHON: C:\Python37
+    # Note: Right now, only 3.7 is used since other versions are ignored by
+    # Pipenv.
     - PYTHON: C:\Python37-x64
 
 init:
