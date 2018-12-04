@@ -1,0 +1,19 @@
+language: python
+python:
+  - "3.6"
+  - "3.6-dev"
+  - "3.7-dev"
+
+install:
+  - pip install pipenv
+  - pipenv install --dev
+
+script:
+  # Automated tests
+  - pipenv run pytest tests/
+
+  # Test build
+  - pipenv run python setup.py sdist bdist_wheel
+
+  # Test doc generation
+  - pipenv run sphinx-build docs/source/ docs/build/
