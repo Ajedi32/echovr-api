@@ -12,6 +12,9 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Ajedi32/echovr-api/",
+    project_urls={
+        "Documentation": "https://echovr-api.readthedocs.io/en/latest/index.html",
+    },
     packages=setuptools.find_packages(),
     install_requires=[
         "requests"
