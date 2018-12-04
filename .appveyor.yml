@@ -1,0 +1,36 @@
+environment:
+  matrix:
+    # Pre-installed Python versions
+    # See: https://www.appveyor.com/docs/windows-images-software/#python
+    - PYTHON: C:\Python36
+    - PYTHON: C:\Python36-x64
+    - PYTHON: C:\Python37
+    - PYTHON: C:\Python37-x64
+
+init:
+  - ps: $env:PATH = "$env:PYTHON;" + $env:PATH
+  - ps: $PYTHON_SITE_SCRIPTS = Join-Path -Path $(Split-Path -Path $(python -m site --user-site) -Parent) -ChildPath Scripts
+  - ps: $PYTHON_SYSTEM_SCRIPTS = Join-Path -Path $env:PYTHON -ChildPath Scripts
+  - ps: $env:PATH = "$PYTHON_SITE_SCRIPTS;$PYTHON_SYSTEM_SCRIPTS;" + $env:PATH
+
+  # Debug info
+  - 'echo "Python directory: %PYTHON%"'
+  - 'echo "PATH: %PATH%"'
+  - python --version
+  - pip --version
+
+install:
+  - pip install --user pipenv
+  - pipenv install --dev
+
+build: false
+
+test_script:
+  # Automated tests
+  - pipenv run pytest tests/
+
+  # Test build
+  - pipenv run python setup.py sdist bdist_wheel
+
+  # Test doc generation
+  - pipenv run sphinx-build docs/source/ docs/build/
