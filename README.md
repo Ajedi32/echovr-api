@@ -1,3 +1,6 @@
+[![AppVeyor Windows Build Status](https://ci.appveyor.com/api/projects/status/v0dcr07ijca9cw5w/branch/master?svg=true
+)](https://ci.appveyor.com/project/Ajedi32/echovr-api/branch/master)
+
 # Echo VR API
 
 Python bindings for Echo VR's HTTP API.
