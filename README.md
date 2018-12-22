@@ -1,5 +1,6 @@
 [![AppVeyor Windows Build Status](https://ci.appveyor.com/api/projects/status/v0dcr07ijca9cw5w/branch/master?svg=true)](https://ci.appveyor.com/project/Ajedi32/echovr-api/branch/master)
 [![Travis Build Status](https://travis-ci.com/Ajedi32/echovr-api.svg?branch=master)](https://travis-ci.com/Ajedi32/echovr-api)
+[![Read the Docs](https://readthedocs.org/projects/echovr-api/badge/)](https://echovr-api.readthedocs.io/en/latest/)
 
 # Echo VR API
 
