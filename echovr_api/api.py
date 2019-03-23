@@ -16,7 +16,15 @@ class API(object):
         return self.base_url.rstrip('/') + "/session"
 
     def fetch_state_data(self):
-        """Return the raw JSON data from the state/session API.
+        """Fetch the raw JSON game state data from EchoVR's ``/session`` API
+
+        This method could be useful if you want to retrieve some API data not
+        directly exposed by this Python wrapper. Otherwise, you should probably
+        use :meth:`fetch_state` instead.
+
+        :returns:
+            An object (probably a :class:`dict`) representing the raw JSON
+            response returned by the EchoVR client.
 
         :raises requests.exceptions.ConnectionError:
             This exception will be thrown if the API is unavaible. This might
